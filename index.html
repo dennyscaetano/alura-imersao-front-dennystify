@@ -2,36 +2,46 @@
 <html lang="pt-BR">
 
 <head>
+    <!-- Define o padrão de codificação de caracteres para o documento -->
     <meta charset="UTF-8">
+    <!-- Ajusta o layout para telas móveis -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Título que será exibido na aba do navegador -->
     <title>Dennysfy Imersão Front-End Alura</title>
     
+    <!-- Link para o reset de estilos, garantindo consistência visual -->
     <link rel="stylesheet" href="reset.css">
+    <!-- Link para os estilos principais da aplicação -->
     <link rel="stylesheet" href="style.css">
 
+    <!-- Link para biblioteca de ícones (FontAwesome) -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/solid.css"
         integrity="sha384-Tv5i09RULyHKMwX0E8wJUqSOaXlyu3SQxORObAI08iUwIalMmN5L6AvlPX2LMoSE" crossorigin="anonymous" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/fontawesome.css"
         integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7" crossorigin="anonymous" />
-
 </head>
 
 <body>
+    <!-- Sidebar: Menu lateral fixo -->
     <div class="sidebar">
         <nav class="sidebar__navigation">
+            <!-- Logo da aplicação -->
             <div class="logo">
                 <a href="">
                     <img src="./assets/icons/logo-dennysfy.png" alt="Logo Dennysfy" />
                 </a>
             </div>
+            <!-- Lista de navegação principal -->
             <ul>
                 <li>
+                    <!-- Link para a página inicial -->
                     <a href="">
                         <span class="fa fa-home"></span>
                         <span>Início</span>
                     </a>
                 </li>
                 <li>
+                    <!-- Link para a funcionalidade de busca -->
                     <a href="">
                         <span class="fa fa-search"></span>
                         <span>Buscar</span>
@@ -39,7 +49,42 @@
                 </li>
             </ul>
         </nav>
-    </div>  
+        <!-- Seção de biblioteca -->
+        <div class="library">
+            <div class="library__content">
+                <!-- Botão para acessar a biblioteca -->
+                <button class="library__button">
+                    <span class="fa fas fa-book"></span>
+                    <span>Sua biblioteca</span>
+                </button>
+                <!-- Ícone para criar um novo item -->
+                <span class="fa fa-plus"></span>
+            </div>
+            <!-- Seção para criar uma playlist -->
+            <section class="section-playlist">
+                <div class="section-playlist__content">
+                    <!-- Título e subtítulo informativo -->
+                    <span class="text title">Crie sua primeira playlist</span>
+                    <span class="text subtitle">É fácil, vamos te ajudar.</span>
+                    <!-- Botão para criar playlist -->
+                    <button class="section-playlist__button">
+                        <span>Criar playlist</span>
+                    </button>
+                </div>
+            </section>
+            <!-- Link para informações sobre cookies -->
+            <div class="cookies">
+                <a href="">Cookies</a>
+            </div>
+            <!-- Botão para selecionar o idioma -->
+            <div class="languages">
+                <button class="languages__button">
+                    <span class="fa fa-globe"></span>
+                    <span>Português do Brasil</span>
+                </button>
+            </div>
+        </div>
+    </div>    
 </body>
 
 </html>

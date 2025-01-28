@@ -1,1 +1,2 @@
-27/01/2025 - Imersão Front-End Alura Projeto realizado durante a imersão Alura com foco no layout do Spotify. Aula 1 finalizada com HTMl e CSS.
+27/01/2025 - Aula 1 - Revisão: HTML, CSS e JS na Prática
+28/01/2025 - Aula 2 - Estilo Avançado e Posicionamento: Transformando Layouts
