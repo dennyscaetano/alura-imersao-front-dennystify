@@ -1,20 +1,18 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-BR"> <!-- Define o idioma da página como português do Brasil -->
 
 <head>
-    <!-- Define o padrão de codificação de caracteres para o documento -->
-    <meta charset="UTF-8">
-    <!-- Ajusta o layout para telas móveis -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Título que será exibido na aba do navegador -->
-    <title>Dennysfy Imersão Front-End Alura</title>
-    
-    <!-- Link para o reset de estilos, garantindo consistência visual -->
-    <link rel="stylesheet" href="reset.css">
-    <!-- Link para os estilos principais da aplicação -->
-    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8"> <!-- Define a codificação de caracteres para suportar acentuação -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Torna o site responsivo -->
+    <title>Dennysfy Imersão Front-End Alura</title> <!-- Define o título da aba do navegador -->
 
-    <!-- Link para biblioteca de ícones (FontAwesome) -->
+    <!-- Importa os arquivos CSS para estilização -->
+    <link rel="stylesheet" href="./src/styles/reset.css"> <!-- Reseta estilos padrão dos navegadores -->
+    <link rel="stylesheet" href="./src/styles/vars.css"> <!-- Define variáveis de estilos globais -->
+    <link rel="stylesheet" href="./src/styles/sidebar-footer.css"> <!-- Estilos do menu lateral e rodapé -->
+    <link rel="stylesheet" href="./src/styles/main-content.css"> <!-- Estilos do conteúdo principal -->
+
+    <!-- Importa a biblioteca de ícones FontAwesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/solid.css"
         integrity="sha384-Tv5i09RULyHKMwX0E8wJUqSOaXlyu3SQxORObAI08iUwIalMmN5L6AvlPX2LMoSE" crossorigin="anonymous" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/fontawesome.css"
@@ -22,60 +20,56 @@
 </head>
 
 <body>
-    <!-- Sidebar: Menu lateral fixo -->
+    <!-- Sidebar (Menu lateral) -->
     <div class="sidebar">
         <nav class="sidebar__navigation">
-            <!-- Logo da aplicação -->
             <div class="logo">
                 <a href="">
-                    <img src="./assets/icons/logo-dennysfy.png" alt="Logo Dennysfy" />
+                    <img src="./src/assets/icons/logo-dennysfy.png" alt="Logo Dennysfy" />
                 </a>
             </div>
-            <!-- Lista de navegação principal -->
             <ul>
                 <li>
-                    <!-- Link para a página inicial -->
-                    <a href="">
+                    <a href=""> <!-- Link para a página inicial -->
                         <span class="fa fa-home"></span>
                         <span>Início</span>
                     </a>
                 </li>
                 <li>
-                    <!-- Link para a funcionalidade de busca -->
-                    <a href="">
+                    <a href=""> <!-- Link para a página de busca -->
                         <span class="fa fa-search"></span>
                         <span>Buscar</span>
                     </a>
                 </li>
             </ul>
         </nav>
-        <!-- Seção de biblioteca -->
+
+        <!-- Seção da biblioteca do usuário -->
         <div class="library">
             <div class="library__content">
-                <!-- Botão para acessar a biblioteca -->
-                <button class="library__button">
+                <button class="library__button"> <!-- Botão para acessar a biblioteca -->
                     <span class="fa fas fa-book"></span>
                     <span>Sua biblioteca</span>
                 </button>
-                <!-- Ícone para criar um novo item -->
-                <span class="fa fa-plus"></span>
+                <span class="fa fa-plus"></span> <!-- Ícone para adicionar novo item -->
             </div>
-            <!-- Seção para criar uma playlist -->
+
+            <!-- Seção para criação de playlists -->
             <section class="section-playlist">
                 <div class="section-playlist__content">
-                    <!-- Título e subtítulo informativo -->
                     <span class="text title">Crie sua primeira playlist</span>
                     <span class="text subtitle">É fácil, vamos te ajudar.</span>
-                    <!-- Botão para criar playlist -->
-                    <button class="section-playlist__button">
+                    <button class="section-playlist__button"> <!-- Botão para criar playlist -->
                         <span>Criar playlist</span>
                     </button>
                 </div>
             </section>
+
             <!-- Link para informações sobre cookies -->
             <div class="cookies">
                 <a href="">Cookies</a>
             </div>
+
             <!-- Botão para selecionar o idioma -->
             <div class="languages">
                 <button class="languages__button">
@@ -84,7 +78,50 @@
                 </button>
             </div>
         </div>
-    </div>    
+    </div>
+
+    <!-- Conteúdo principal -->
+    <main>
+        <div class="main-container">
+            <!-- Barra de navegação superior -->
+            <nav class="header__navigation">
+                <div class="navigation">
+                    <button class="arrow-left"> <!-- Botão para voltar -->
+                        <img src="./src/assets/icons/small-left.png" alt="Seta esquerda">
+                    </button>
+                    <button class="arrow-right"> <!-- Botão para avançar -->
+                        <img src="./src/assets/icons/small-right.png" alt="Seta direita">
+                    </button>
+                </div>
+
+                <!-- Barra de pesquisa -->
+                <div class="header__search">
+                    <img src="./src/assets/icons/search.png" alt="">
+                    <input id="search-input" type="text" maxlength="800" placeholder="O que você quer ouvir?" />
+                </div>
+
+                <!-- Botões de login e inscrição -->
+                <div class="header__login">
+                    <button class="subscribe">Inscreva-se</button>
+                    <button class="login">Entrar</button>
+                </div>
+            </nav>
+        </div>
+    </main>
+
+    <!-- Rodapé com chamada para testar o plano premium -->
+    <footer class="disclaimer-premium">
+        <div class="text">
+            <p class="disclaimer-premium__title">Testar o Premium de graça</p>
+            <p class="disclaimer-premium__subtitle">
+                Inscreva-se para curtir música ilimitada e podcasts só com alguns
+                anúncios. Não precisa de cartão de crédito.
+            </p>
+        </div>
+        <div class="button">
+            <button type="button">Inscreva-se grátis</button>
+        </div>
+    </footer>
 </body>
 
 </html>

@@ -1,0 +1,8 @@
+:root{
+    /* Definição da fonte padrão */
+    --font-dm-sans: "DM Sans", sans-serif;
+
+    /* Definição das cores padrão */
+    --bg-icon: #131313; /* Cor de fundo para ícones */
+    --bg-arrow-color: rgba(0,0,0,7); /* Cor de fundo para setas */
+}
