@@ -1,0 +1,206 @@
+body{
+    background-color: #000; /* Define o fundo da página como preto */
+    font-family: var(--font-dm-sans); /* Define a fonte padrão */
+}
+
+.sidebar{
+    position:fixed; /* Mantém a barra lateral fixa na tela */
+    top:0;
+    left:0;
+    bottom:0;
+    padding:12px; /* Adiciona espaçamento interno */
+    width:300px; /* Define a largura da barra lateral */
+}
+
+.sidebar__navigation{
+    background-color: #121212; /* Cor de fundo da navegação */
+    border-radius:8px; /* Arredonda as bordas */
+    padding:16px 0 0 16px; /* Adiciona espaçamento interno */
+}
+
+.logo{
+    background: #121212;
+    display:flex; /* Usa flexbox para alinhamento */
+    border-radius:8px;
+    padding:16px 0 0 16px;
+}
+
+.sidebar__navigation .logo img{
+    width:80px; /* Define o tamanho do logo */
+}
+
+.sidebar nav ul{
+    margin-top: 20px; /* Espaço acima da lista */
+    padding:0 20px 10px 20px; /* Ajusta espaçamentos internos */
+}
+
+.sidebar ul li{
+    padding: 10px 0; /* Espaçamento entre os itens da lista */
+}
+
+.sidebar nav ul li a{
+    color: #b3b3b3; /* Cor do texto */
+    text-decoration: none; /* Remove o sublinhado */
+    font-weight: 600; /* Define o peso da fonte */
+    font-size: 14px; /* Tamanho da fonte */
+}
+
+.library{
+    background-color:#121212;
+    border-radius:8px;
+    display:flex;
+    justify-content: space-between; /* Distribui o conteúdo igualmente */
+    flex-direction: column; /* Organiza os elementos em coluna */
+    padding:4px 8px;
+    color:#b3b3b3;
+    font-weight: 600;
+    font-size:14px;
+    margin-top: 10px;
+}
+
+.library .library__content{
+    display:flex;
+    justify-content: space-between; /* Distribui os elementos lado a lado */
+}
+
+.library .library__button{
+    display:flex;
+    margin-right: 10px;
+    color:#b3b3b3;
+    background-color: transparent;
+    border:0px;
+    font-size: 14px;
+    font-weight: 700;
+    text-align: center;
+    text-decoration: none;
+    text-transform: none;
+    padding:20px 10px;
+}
+
+.library .library__button .fa{
+    font-size:20px;
+    font-weight: 300;
+    color:#b3b3b3;
+    margin-right: 10px;
+    padding-right:8px;
+}
+
+.library .library__content .fa-plus{
+    margin: 24px 10px; /* Ajusta o ícone de adicionar */
+}
+
+.section-playlist{
+    display:flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap:20px;
+    background-color: #242424; /* Cor de fundo da seção de playlists */
+    color:#b3b3b3;
+    font-weight: 600;
+    font-size: 14px;
+    margin: 8px 0;
+    padding:16px 20px;
+    border-radius:10px;
+}
+
+.section-playlist .section-playlist__content{
+    display:flex;
+    flex-direction: column; /* Organiza os elementos em coluna */
+}
+
+.section-playlist__content .text{
+    padding-bottom:14px;
+    color:#FFF; /* Cor do texto em branco */
+}
+
+.section-playlist__content .title{
+    font-weight: 700; /* Deixa o título mais destacado */
+}
+
+.section-playlist__content .subtitle{
+    font-weight: 500;
+    font-size: 12px;
+}
+
+.section-playlist__content .section-playlist__button{
+    display: flex;
+    justify-content: center;
+    background-color: #FFF;
+    color:#000;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 700;
+    text-decoration:none;
+    text-transform: none;
+    padding:10px;
+    margin-top: 12px;
+    border:0;
+    width: 113px;
+}
+
+.sidebar .cookies{
+    margin:25px 20px; /* Espaço ao redor dos links de cookies */
+}
+
+.sidebar .cookies a{
+    color:#b3b3b3;
+    font-weight: 500;
+    font-size:10px;
+    text-decoration: none;
+}
+
+.sidebar .cookies a:hover{
+    text-decoration: underline; /* Adiciona sublinhado ao passar o mouse */
+}
+
+.languages .languages__button{
+    align-items: center;
+    background-color: transparent;
+    border: 1px solid #878787; /* Borda ao redor do botão */
+    color:#FFF;
+    font-weight: bold;
+    cursor:pointer; /* Muda o cursor para indicar interatividade */
+    width: 170px;
+    margin:8px;
+    padding:8px;
+    border-radius:20px; /* Arredonda as bordas do botão */
+}
+
+.disclaimer-premium {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(to right, #ae2896, #509bf5); /* Fundo com gradiente */
+    padding: 15px 40px;
+    display: flex;
+    justify-content: space-between;
+}
+.disclaimer-premium .text {
+   flex-shrink: 0;
+}
+.disclaimer-premium .disclaimer-premium__title {
+    color: #ffffff;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+
+.disclaimer-premium .disclaimer-premium__subtitle {
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.disclaimer-premium button {
+    background-color: #ffffff;
+    color: #000000;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 14px 30px;
+    border: 0px;
+    border-radius: 40px; /* Arredonda o botão */
+    cursor: pointer; /* Indica interatividade */
+    flex-shrink: 0;
+}
